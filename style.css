@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+	--vert: #00c853;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+header {
+	background: linear-gradient(#13181d, #33613e, #63cc90);
+}
+
+header nav {
+	padding: 30px 5% 0px 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav h1 {
+	margin: 0;
+	text-transform: uppercase;
+	color: var(--vert);
+}
+header nav .right {
+	display: flex;
+	align-items: center;
+}
+header nav .right a {
+	margin: 0 15px 0 0;
+	color: #ccc;
+}
+header nav .right a:hover {
+	color: white;
+	cursor: pointer;
+}
+header nav .right button {
+	padding: 5px 15px;
+	font-size: 16px;
+	background-color: inherit;
+	border: 1px solid var(--vert);
+	border-radius: 5px;
+	color: var(--vert);
+	cursor: pointer;
+	transition: color 0.5s, background-color 0.5s;
+}
+header nav .right button:hover {
+	color: inherit;
+	background-color: var(--vert);
+}
+
+.presentation {
+	padding: 30px 5%;
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.presentation .product-presentation {
+	width: 100%;
+	flex-shrink: 3;
+}
+.presentation .product-presentation h1 {
+	margin: 0;
+	font-size: 4vw;
+	width: 80%;
+}
+.presentation .product-presentation p {
+	font-weight: 300;
+	color: #e9e9e9;
+}
+.presentation .product-presentation button {
+	margin-top: 20px;
+	padding: 15px 20px;
+	font-size: 15px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.presentation .image-presentation img {
+	width: 100%;
+}
+
+.first .product-presentation button {
+	background-color: var(--vert);
+	color: white;
+	border: 1px solid var(--vert);
+	transition: background-color 0.5s, color 0.5s;
+}
+.first .product-presentation button:hover {
+	background-color: inherit;
+	color: var(--vert);
+}
+.first .product-presentation .small-images {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.first .product-presentation .small-images .small {
+	padding: 20px;
+	background-color: #365e44;
+	margin: 0 15px 15px 0;
+	border-radius: 20px;
+	transition: filter 0.5s;
+}
+.first .product-presentation .small-images .small:hover {
+	filter: brightness(50%);
+}
+.first .product-presentation .small-images .small img {
+	width: 120px;
+}
+
+.second {
+	margin: 0;
+	background-color: #13181d;
+}
+.second .product-presentation .new {
+	color: var(--vert);
+}
+.second .product-presentation button {
+	background-color: inherit;
+	border: 1px solid var(--vert);
+	color: var(--vert);
+	transition: background-color 0.5s, color 0.5s;
+}
+.second .product-presentation button:hover {
+	background-color: var(--vert);
+	color: white;
+}
+
+footer {
+	margin: 0;
+	padding: 20px;
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+footer h3 {
+	color: var(--vert);
+}
+footer p {
+	cursor: pointer;
+	color: #ccc;
+}
+footer p:hover {
+	color: white;
+}
+
+footer a {
+	cursor: pointer;
+	text-decoration:none;
+	color: #ccc;
+}
+footer a:hover {
+	color: white;
+	text-decoration:none;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #388e3c;}
+
+
+@media screen and (max-width: 740px) {
+	nav .right a {
+		display: none;
+	}
+
+	.presentation .product-presentation h1 {
+		font-size: 2em;
+	}
+	.presentation .image-presentation {
+		display: none;
+	}
+	.first .product-presentation .small-images .small img {
+		width: 90px;
+	}
+
+	footer {
+		justify-content: flex-start;
+	}
+	footer .column {
+		width: 80%;
+	}
+}
